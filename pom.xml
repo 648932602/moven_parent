@@ -10,7 +10,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<springversion>4.3.4.RELEASE</springversion>
+		<springversion>4.3.7.RELEASE</springversion>
 		<junitversion>4.12</junitversion>
 		<mybatisversion>3.3.0</mybatisversion>
 		<mavenversion>2.4.3</mavenversion>
