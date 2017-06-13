@@ -23,6 +23,17 @@
 		<memcachedversion>2.6.6</memcachedversion>
 		<javeeeapiversion>7.0</javeeeapiversion>
 	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>1.5.4.RELEASE</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 		<!-- maven组件 start -->
 		<dependency>
@@ -347,10 +358,6 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
 		</plugins>
 	</build>
 
