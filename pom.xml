@@ -16,11 +16,11 @@
 		<mavenversion>2.4.3</mavenversion>
 		<httpclientsion>2.4.3</httpclientsion>
 		<freemarkerversion>2.3.20</freemarkerversion>
-		<ehcacheversion>2.6.11</ehcacheversion>
 		<mybatisehcacheversion>1.0.3</mybatisehcacheversion>
 		<bcprovversion>140</bcprovversion>
 		<jedisversion>2.8.0</jedisversion>
 		<memcachedversion>2.6.6</memcachedversion>
+		<ehcacheversion>2.6.11</ehcacheversion>
 		<javeeeapiversion>7.0</javeeeapiversion>
 	</properties>
 	<!-- <dependencyManagement> -->
