@@ -23,6 +23,28 @@
 		<ehcacheversion>2.6.11</ehcacheversion>
 		<javeeeapiversion>7.0</javeeeapiversion>
 	</properties>
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<project.environment>dev</project.environment>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+				<project.environment>test</project.environment>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<project.environment>prod</project.environment>
+			</properties>
+		</profile>
+	</profiles>
+
 	<!-- <dependencyManagement> -->
 	<!-- <dependencies> -->
 	<!-- <dependency> -->
@@ -206,6 +228,19 @@
 			<version>3.1.0</version>
 		</dependency>
 		<!-- servlet-api组件 end -->
+
+		<!-- hibernate-validator组件 start -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.2.1.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator-annotation-processor</artifactId>
+			<version>5.2.1.Final</version>
+		</dependency>
+		<!-- hibernate-validator组件 end -->
 
 		<!-- jstl组件 start -->
 		<dependency>
@@ -400,4 +435,5 @@
 			</plugin>
 		</plugins>
 	</build>
+
 </project>
