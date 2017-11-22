@@ -10,40 +10,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<springversion>4.3.7.RELEASE</springversion>
-		<junitversion>4.12</junitversion>
-		<mybatisversion>3.3.0</mybatisversion>
-		<mavenversion>2.4.3</mavenversion>
-		<httpclientsion>2.4.3</httpclientsion>
-		<freemarkerversion>2.3.20</freemarkerversion>
-		<mybatisehcacheversion>1.0.3</mybatisehcacheversion>
-		<bcprovversion>140</bcprovversion>
-		<jedisversion>2.8.0</jedisversion>
-		<memcachedversion>2.6.6</memcachedversion>
-		<ehcacheversion>2.6.11</ehcacheversion>
-		<javeeeapiversion>7.0</javeeeapiversion>
 	</properties>
-
-	<profiles>
-		<profile>
-			<id>dev</id>
-			<properties>
-				<project.environment>dev</project.environment>
-			</properties>
-		</profile>
-		<profile>
-			<id>test</id>
-			<properties>
-				<project.environment>test</project.environment>
-			</properties>
-		</profile>
-		<profile>
-			<id>prod</id>
-			<properties>
-				<project.environment>prod</project.environment>
-			</properties>
-		</profile>
-	</profiles>
 
 	<!-- <dependencyManagement> -->
 	<!-- <dependencies> -->
@@ -61,7 +28,7 @@
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-resources-plugin</artifactId>
-			<version>${mavenversion}</version>
+			<version>2.4.3</version>
 		</dependency>
 		<!-- maven组件 end -->
 
@@ -69,7 +36,7 @@
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
-			<version>${mybatisversion}</version>
+			<version>3.3.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -92,91 +59,91 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-beans</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context-support</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-expression</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-oxm</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
@@ -186,13 +153,13 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>${junitversion}</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${springversion}</version>
+			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
@@ -300,7 +267,7 @@
 		<dependency>
 			<groupId>org.freemarker</groupId>
 			<artifactId>freemarker</artifactId>
-			<version>${freemarkerversion}</version>
+			<version>2.3.20</version>
 		</dependency>
 		<!-- freemarker依赖包 end -->
 
@@ -308,7 +275,7 @@
 		<dependency>
 			<groupId>net.sf.ehcache</groupId>
 			<artifactId>ehcache-core</artifactId>
-			<version>${ehcacheversion}</version>
+			<version>2.6.11</version>
 		</dependency>
 		<!-- ehcache缓存 end -->
 
@@ -316,7 +283,7 @@
 		<dependency>
 			<groupId>org.mybatis.caches</groupId>
 			<artifactId>mybatis-ehcache</artifactId>
-			<version>${mybatisehcacheversion}</version>
+			<version>1.0.3</version>
 		</dependency>
 		<!-- mybatis支持ehcache缓存包 end -->
 
@@ -324,7 +291,7 @@
 		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
-			<version>${jedisversion}</version>
+			<version>2.8.0</version>
 		</dependency>
 		<!-- redis缓存客户端 end -->
 
@@ -332,7 +299,7 @@
 		<!-- <dependency> -->
 		<!-- <groupId>org.moven</groupId> -->
 		<!-- <artifactId>memcached</artifactId> -->
-		<!-- <version>${memcachedversion}</version> -->
+		<!-- <version>2.6.6</version> -->
 		<!-- </dependency> -->
 		<!-- memcached缓存客户端 end -->
 
@@ -358,7 +325,7 @@
 		<dependency>
 			<groupId>bouncycastle</groupId>
 			<artifactId>bcprov-jdk16</artifactId>
-			<version>${bcprovversion}</version>
+			<version>140</version>
 		</dependency>
 		<!-- RSA证书加密 end -->
 
@@ -366,7 +333,7 @@
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
-			<version>${javeeeapiversion}</version>
+			<version>7.0</version>
 		</dependency>
 		<!-- websocket依赖包 end -->
 
