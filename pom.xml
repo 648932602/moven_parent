@@ -47,14 +47,7 @@
 		<!-- springmvc组件 start -->
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
-			<version>4.3.7.RELEASE</version>
-			<type>jar</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-aspects</artifactId>
+			<artifactId>spring-core</artifactId>
 			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
@@ -82,13 +75,6 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-core</artifactId>
-			<version>4.3.7.RELEASE</version>
-			<type>jar</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
 			<artifactId>spring-expression</artifactId>
 			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
@@ -103,6 +89,27 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>4.3.7.RELEASE</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.3.7.RELEASE</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>4.3.7.RELEASE</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
 			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
@@ -111,13 +118,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-oxm</artifactId>
-			<version>4.3.7.RELEASE</version>
-			<type>jar</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-tx</artifactId>
 			<version>4.3.7.RELEASE</version>
 			<type>jar</type>
 			<scope>compile</scope>
@@ -254,9 +254,10 @@
 
 		<!-- freemarker依赖包 start -->
 		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>2.3.20</version>
+		    <groupId>org.freemarker</groupId>
+		    <artifactId>freemarker</artifactId>
+		    <version>2.3.25-incubating</version>
+		    <type>jar</type>
 		</dependency>
 		<!-- freemarker依赖包 end -->
 
@@ -277,6 +278,11 @@
 		<!-- mybatis支持ehcache缓存包 end -->
 
 		<!-- redis缓存客户端 start -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+			<version>1.8.7.RELEASE</version>
+		</dependency>
 		<dependency>
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
@@ -376,6 +382,26 @@
 		</dependency>
 		<!-- dubbo依赖包 end -->
 
+		<!-- IText PDF转换包 start -->
+		<dependency>
+		    <groupId>com.itextpdf</groupId>
+		    <artifactId>itextpdf</artifactId>
+		    <version>5.5.12</version>
+		</dependency>
+		<!-- IText PDF转换包 end -->
+		<!-- docraptor PDF转换包 end -->
+		<dependency>
+			<groupId>com.docraptor</groupId>
+			<artifactId>docraptor</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.glassfish.jersey.core</groupId>
+		    <artifactId>jersey-common</artifactId>
+		    <version>2.26</version>
+<!-- 		    <scope>test</scope> -->
+		</dependency>
+		<!-- docraptor PDF转换包 end -->
 	</dependencies>
 
 	<build>
